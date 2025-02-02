@@ -109,4 +109,44 @@ button:active{
     font-size:2.6vmin;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+@media (max-width: 1185px) {
+    .lparent{
+        height: fit-content;
+        width: 70%;
+    }
+    #btnParent{
+        display: flex;
+        flex-direction: column;
+        gap: 0vmin;
+        margin: 2vmin 0;
+    }
+
+
+
+
+    
+#accounttxt,a{
+    font-size:2.6vmin;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+}
+@media (max-width: 900px) {
+    .lparent{
+        height: fit-content;
+        width: 80%;
+    }
+    #btnParent{
+        display: flex;
+        flex-direction: column;
+        gap: 0vmin;
+        margin: 2vmin 0;
+    }
+    
 }
