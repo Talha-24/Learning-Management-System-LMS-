@@ -1,6 +1,9 @@
 b a{
     color: #8098F9;
     font-size: 2vmin;
+    margin: 2vmin 0px;
+    width: 100%;
+    display: inline-block;
 }
 .otpemailtext{
   color: black;
@@ -11,6 +14,9 @@ b a{
 #submitbtn{
    position: relative;
    bottom: 2%;
+   display: flex;
+   flex-direction: column;
+  gap: 3vmin;
 }
 #submitbtn p{
     color: black;
@@ -21,4 +27,29 @@ b a{
 }
 #logintext{
     margin: 10px 0;
+    font-weight: 500;
+}
+@media (max-width: 980px) {
+    #otpdiv{
+        height: fit-content;
+        width: 70%;
+    }
+  
+}
+@media (max-width:463px) {
+    #otpdiv button{
+        width: 100%;
+        font-size: 3.5vmin;
+    }
+    #inputss input{
+        width: 8vmin;
+        height: 8vmin;
+        border-radius: none;
+        border: 1px solid #8098F980;
+    }
+    b a{
+        font-size: 2.2vmin;
+    }
+    
+    
 }
