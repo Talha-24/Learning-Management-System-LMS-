@@ -24,7 +24,7 @@ const Otp = () => {
     </div>
     <div id='submitbtn' className='w-[100%] text-right'>
         <button className='w-[100%]'>Submit</button>
-        <p className='font-semibold text-[3vmin]'>Back to Login Page</p>
+        <p id="logintext" className='font-semibold text-[3vmin]'>Back to Login Page</p>
     </div>
 
       </div>
