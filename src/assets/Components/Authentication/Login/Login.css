@@ -1,0 +1,75 @@
+
+.parent{
+    padding: 0 40px;
+}
+img{
+height: 20vmin;
+width: 28vmin;
+align-self: center;
+
+}
+
+.logo{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inputs input{
+    background-color: #F0F0F0;
+    width: 100%;
+    padding: 1.5% 5%;
+    border-radius: 8px;
+}
+.inputs 
+ p{
+    font-size: 3.2vmin;
+    font-weight: 500;
+}
+
+button{
+    padding: 1.6vmin 4vmin;
+    border-radius: 8px;
+    background-color: #00173d;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+}
+button:active{
+    background-color: #001432;
+}
+
+.forgotCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.forgotCont input{
+   padding: 10px;
+    width: fit-content;
+}
+.forgotCont p{
+    width: 90%;
+    font-size: 1rem;
+   
+}
+.signupCont{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.signupCont p{
+    font-size: 1rem;
+
+}
+#forgottext{
+    font-size: 1rem;
+}
