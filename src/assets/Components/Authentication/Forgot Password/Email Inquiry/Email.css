@@ -1,0 +1,87 @@
+
+.emailparent{
+    padding: 0 6vmin;
+}
+img{
+height: 20vmin;
+width: 28vmin;
+align-self: center;
+
+}
+
+.logo{
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.inputs{
+    width: 100%;
+    margin: 70px 0;
+}
+.inputs input{
+    background-color: #F0F0F0;
+    width: 100%;
+    padding: 1.8vmin 5%;
+    border-radius: 8px;
+}
+.inputs 
+ p{
+    font-size: 3.2vmin;
+    font-weight: 500;
+}
+
+button{
+    padding: 1.6vmin 4vmin;
+    border-radius: 8px;
+    font-size: 2.8vmin;
+    background-color: #00173d;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+}
+button:active{
+    background-color: #001432;
+}
+
+.forgotCont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.forgotCont input{
+    width: fit-content;
+    
+}
+.forgotCont p{
+    width: 90%;
+    font-size:2.6vmin;
+    font-weight: 400;
+   
+}
+.emailsignupCont{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    padding: 5vmin 0px;
+    
+}
+.emailsignupCont h6{
+    font-size:3vmin;
+    color: black;
+
+}
+#forgottext{
+    font-size: 3vmin;
+    font-weight: 400;
+    color: black;
+}
+#email{
+    color: black;
+}
+#forgotpasstext{
+    color: black;
+    font-size: 3.2vmin;
+}
