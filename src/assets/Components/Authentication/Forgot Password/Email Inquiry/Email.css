@@ -9,14 +9,15 @@ align-self: center;
 
 }
 
+
 .logo{
-    margin-bottom: 20px;
-    margin-top: 5px;
+    margin-bottom: 4vmin;
 }
 
 .inputs{
     width: 100%;
-    margin: 70px 0;
+    margin-top: 4vmin;
+    margin-bottom: 7vmin;
 }
 .inputs input{
     background-color: #F0F0F0;
@@ -89,5 +90,29 @@ button:active{
     .emailparent{
         width: 80%;
     }
+    
+}
+@media (max-width: 629px) {
+    .emailparent{
+        height: fit-content;
+        width: 90%;
+    }
+    #submitBtn button{
+        width: 100%;
+        padding: 2vmin 0;
+        font-size: 3.4vmin;
+     
+    }
+    
+
+.logo{
+    margin-bottom: 4vmin;
+}
+
+.inputs{
+    width: 100%;
+    margin-top: 14vmin;
+    margin-bottom: 8vmin;
+}
     
 }

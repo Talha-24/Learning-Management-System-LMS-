@@ -8,10 +8,10 @@ function App() {
 
   return (
     <>
-    {/* <Login/>
-    <Register/>  
+     {/* <Login/> */}
+    {/* <Register/>   */}
     
-     <Otp/> */}
+     {/* <Otp/> */}  
     <Email/>
     
     {/* <StudentInfo/>  */} 

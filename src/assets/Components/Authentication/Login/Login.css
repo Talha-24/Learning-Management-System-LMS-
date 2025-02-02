@@ -140,7 +140,7 @@ button:active{
 @media (max-width: 900px) {
     .lparent{
         height: fit-content;
-        width: 80%;
+        width: 90%;
     }
     #btnParent{
         display: flex;
