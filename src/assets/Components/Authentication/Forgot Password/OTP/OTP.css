@@ -29,6 +29,13 @@ b a{
     margin: 10px 0;
     font-weight: 500;
 }
+
+@media (max-width: 1250px) {
+
+      #otpdiv{
+        width: 80%;
+      }
+}
 @media (max-width: 980px) {
     #otpdiv{
         height: fit-content;
@@ -37,6 +44,9 @@ b a{
   
 }
 @media (max-width:463px) {
+    #otpdiv{
+        width: 90%;
+    }
     #otpdiv button{
         width: 100%;
         font-size: 3.5vmin;
