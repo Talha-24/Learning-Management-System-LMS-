@@ -9,12 +9,12 @@ function App() {
   return (
     <>
     {/* <Login/> */}
-    <Register/>  
-    {/* 
-     <Otp/>
-   <Email/>
+    {/* <Register/>   */}
     
-    <StudentInfo/> */}
+     <Otp/>
+   {/* <Email/>
+    
+    <StudentInfo/>  */}
     
     </>
   )
