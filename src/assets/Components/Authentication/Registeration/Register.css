@@ -66,8 +66,8 @@ button:active{
     gap: 1vmin;
     background-color: none;
 }
-.signinCont p{
-    font-size:3vmin;
+.signinCont p,a{
+    font-size:3.2vmin;
     color: black;
 }
 
@@ -98,7 +98,7 @@ button:active{
         width: 80%;
     } 
     .signinCont{
-        padding: 0vmin 0;
+        padding-bottom: 2vmin;
     }
 }
 
@@ -108,7 +108,7 @@ button:active{
         width: 90%;
     }
     .signinCont{
-        padding: 4vmin 0;
+        padding-bottom: 2vmin;
     }
     #signupbtn button{
         width: 100%;
