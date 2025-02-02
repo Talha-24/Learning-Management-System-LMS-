@@ -16,7 +16,7 @@ b a{
    bottom: 2%;
    display: flex;
    flex-direction: column;
-  gap: 3vmin;
+   gap: 1vmin;
 }
 #submitbtn p{
     color: black;
@@ -26,8 +26,12 @@ b a{
     
 }
 #logintext{
-    margin: 10px 0;
+    margin: 2vmin 0;
     font-weight: 500;
+}
+#otpdiv img{
+   height: 25vmin;
+   width: 24vmin;
 }
 
 @media (max-width: 1250px) {
@@ -39,7 +43,7 @@ b a{
 @media (max-width: 980px) {
     #otpdiv{
         height: fit-content;
-        width: 70%;
+        width: 80%;
     }
   
 }
@@ -60,6 +64,11 @@ b a{
     b a{
         font-size: 2.2vmin;
     }
+    
+#logintext{
+    margin-bottom: 2.5vmin;
+    font-weight: 500;
+}
     
     
 }
