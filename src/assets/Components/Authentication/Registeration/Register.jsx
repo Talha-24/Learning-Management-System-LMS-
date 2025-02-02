@@ -6,7 +6,7 @@ const Register = () => {
             <div className="bg-[#FFFFFF] rounded-[20px] h-[92%] w-[60%] parent registerdiv">
                 <div className="w-[100%] text-center flex flex-col justify-center">
                     <img src="src\assets\Components\Authentication\Login\image.png" alt="" />
-                    <p id='signupt' className="text-black text-[3.2vmin]">Signup Your Account</p>
+                    <p id='signuptxt' className="text-black text-[3.2vmin]">Signup Your Account</p>
                 </div>
                 <div className="Reginputs">
                     <p>Username</p>

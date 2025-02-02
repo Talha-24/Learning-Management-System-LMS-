@@ -75,6 +75,10 @@ button:active{
     color: black;
     font-size: 3.2vmin;
 }
+#signuptxt{
+    color: black;
+    font-size: 3.2vmin;
+}
 
 #signupbtn{
     height: 100%;
