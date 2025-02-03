@@ -4,7 +4,7 @@ const StudentInfo = () => {
     return (
         <div id='container' className='w-[100%] h-[100vh] flex flex-col items-center justify-center'>
 
-            <div id='main' className='bg-[#26235C] relative flex flex-col items-center w-[40%] h-[95%] rounded-[5vmin]'>
+            <div id='main' className='bg-[#26235C] relative flex flex-col items-center w-[40%] h-[94%] rounded-[5vmin]'>
                 <div id="ellipse" className="absolute left-5">
                     <svg width="40" height="60" viewBox="0 0 68 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <ellipse cx="33.6857" cy="30.0335" rx="33.4935" ry="29.5398" fill="#F7DF1E" />

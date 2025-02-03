@@ -40,6 +40,9 @@ p span{
     border-radius: 1vmin;
     padding: 2vmin 10vmin;
 }
+#social button:active{
+    scale: 0.99;
+}
 #social{
     margin-top:10vmin;
     display: flex;
@@ -55,17 +58,47 @@ p span{
 #socials svg{
     width: 3vmin;
     height: 5vmin;
+    cursor: pointer;
 }
 .back{
     width: 100%;
-
-   
-    
     
 }
 .back p{
 
     text-align: right;
     font-size: 3.2vmin;
+    cursor: pointer;
+    
+}
+@media (max-width:1030px) {
+    #main{
+        width: 50%;
+    }
+    
+}
+
+@media (max-width:900px) {
+    #main{
+        width: 60%;
+        height: fit-content;
+    }
+    
+}
+
+@media (max-width:680px) {
+    #main{
+        width: 82%;
+        height: fit-content;
+    }
+    
+}
+
+
+@media (max-width:438px) {
+    #main{
+        width: 80%;
+        height: fit-content;
+    }
     
 }

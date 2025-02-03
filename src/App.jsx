@@ -15,8 +15,8 @@ function App() {
      {/* <Otp/> */}  
     {/* <Email/> */}
     
-    {/* <StudentInfo/>  */} 
-    <Home/>
+    <StudentInfo/>  
+    {/* <Home/> */}
     
     </>
   )
