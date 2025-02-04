@@ -1,0 +1,51 @@
+/* 
+#Notification{
+    padding: 10px;
+} */
+
+#Notification p{
+    color: black;
+    font-family: sans-serif;
+    
+}
+#notificationimage{
+background-color: red;
+height: 10vmin;
+width: 10vmin;
+border-radius: 50%;
+border: 2px solid #F8A435;
+}
+
+
+
+
+
+#iconsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3vmin;
+    padding: 2vmin 1vmin;
+}
+#NotificationText{
+    font-size: 0.7em;
+    text-align: justify;
+    line-height: 1.4cap;
+    display: block;
+    width: 100%;
+}
+#NotificationTime{
+    font-size: 1.5vmin;
+    color: #6C6C6C;
+   display: block;
+   width: 100%;
+   font-weight: bold;
+ }
+#iconsContainer .persons{
+    height: 50px;
+    width: 50px;
+}
+.text{
+    font-size: 3.2vmin;
+}

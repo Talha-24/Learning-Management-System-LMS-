@@ -3,10 +3,67 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
 }
 body{
   height: 100%;
   width: 100%;
   background-color: #E8F1F2;
+}
+#Semester{
+  padding: 1vmin 3vmin;
+}
+#Semester span{
+  font-size: 3.2vmin;
+}
+#semestersyllabus{
+  padding: 2.3vmin 3vmin;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+#semestersyllabus input{
+  height: 2.6vmin;
+  width: 2.6vmin;
+}
+
+
+
+#semestersyllabusb{
+  padding: 1vmin 3vmin;
+ 
+}
+#semestersyllabusb button{
+  padding: 0;
+  background: transparent;
+  color: #344054;
+  border: 2px solid #D0D5DD;
+  font-weight: 400;
+  padding: 1.2vmin 2.8vmin;
+  border-radius: 10px;
+  font-size: 2vmin;
+}
+
+#coursedetails{
+  width: 80%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 10vmin;
+}
+
+
+
+#coursedetails img{
+  height: 40px;
+  width: 40px;
+}
+#coursedetailsb{
+  padding: 4vmin 1.4vmin;
+}
+#mycoursesparent{
+  width: 85%;
+  margin-left: 15px;
+
 }

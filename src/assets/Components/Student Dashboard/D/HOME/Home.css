@@ -3,12 +3,25 @@
     width: 100%;
     padding: 4vmin;
 }
-#addvertisement img{
+#addvertisement{
+    /* height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4vmin; */
+    border: 1px solid black;
+    height: 40%;
+    width: 100%;
+}
+
+#addvertisement div{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 4vmin;
+    background-image: url("src\assets\Components\Student Dashboard\D\HOME\Assets\Addvertisement.png");
+    background-size: cover;
 }
+
 #coursesinformation{
     display: flex;
     flex-direction: column;
