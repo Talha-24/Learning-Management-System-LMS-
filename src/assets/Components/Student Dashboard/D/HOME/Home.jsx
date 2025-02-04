@@ -1,10 +1,10 @@
 import React from 'react'
 import NavBar from '../../NavBar/NavBar'
 import "./Home.css";
-import Header from '../../Header/Header';
 import Advertisement from '../../HomeMain/Advertisement';
 import Courseinfomain from '../../HomeMain/CourseInfomain';
 import Semesters from '../../My Courses/Semesters';
+import MyCourses from '../../My Courses/Courses/MyCourses';
 
 const Home = () => {
   return (
@@ -12,8 +12,8 @@ const Home = () => {
       <div className='w-[20%]'>
         <NavBar/>
         </div>
-        <div className="w-[70%] bg-amber-300 h-[100%]">
-        <Header/>
+        <div className="w-[78%]  h-[100%] flex flex-col bg-blue-500">
+       <MyCourses/>
         <Semesters/>
         {/* <Advertisement/>
         <Courseinfomain/> */}

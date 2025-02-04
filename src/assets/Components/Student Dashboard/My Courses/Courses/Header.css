@@ -1,0 +1,51 @@
+
+
+
+#Header{
+    /* margin-top: 5vmin; */
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+ /* display: flex;
+ flex-direction: row;
+ justify-content: space-between; */
+}
+#Headerimg{
+    display: flex;
+    flex-direction: row;
+    gap: 4vmin;
+
+}
+#Headerimg img{
+     height: 5vmin;
+     width: 5vmin;
+}
+#dashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vmin;
+    font-family: sans-serif;
+}
+
+#dashboard #st{
+    color: #00173D;
+    font-weight: bold;
+}
+#dashboard #nd{
+    color: #00173D;
+    font-weight: 600;
+    font-size: 3vmin;
+}
+#st{
+    color: #00173D;
+    font-weight: 700;
+    font-size: 3.8vmin;
+
+}
+#MyCourses{
+    height: 10%;
+    width: 100%;
+}

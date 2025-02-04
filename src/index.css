@@ -10,13 +10,14 @@ body{
   background-color: #E8F1F2;
 }
 #Semester{
-  padding: 1vmin 3vmin;
+  padding: 0 3vmin;
 }
 #Semester span{
-  font-size: 3.2vmin;
+  font-size: 2vmax;
 }
 #semestersyllabus{
   padding: 2.3vmin 3vmin;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -31,7 +32,7 @@ body{
 
 
 #semestersyllabusb{
-  padding: 1vmin 3vmin;
+  padding: 0vmin 3vmin;
  
 }
 #semestersyllabusb button{
@@ -40,30 +41,30 @@ body{
   color: #344054;
   border: 2px solid #D0D5DD;
   font-weight: 400;
-  padding: 1.2vmin 2.8vmin;
+  padding: 1vmin 2.8vmin;
   border-radius: 10px;
-  font-size: 2vmin;
+  font-size: 1.6vmin;
+  border: 1px solid #D0D5DD;
 }
 
 #coursedetails{
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction:row;
   align-items: center;
   gap: 10vmin;
+  background-color: magenta;
 }
 
 
 
 #coursedetails img{
-  height: 40px;
-  width: 40px;
+  height: 3vmax;
+  width: 3vmax;
 }
 #coursedetailsb{
-  padding: 4vmin 1.4vmin;
+  padding: 2vmax 1vmax;
 }
-#mycoursesparent{
-  width: 85%;
-  margin-left: 15px;
-
+#coursedetailsb p{
+  font-size: 1.2vmax;
 }
