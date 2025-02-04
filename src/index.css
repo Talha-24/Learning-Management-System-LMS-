@@ -10,10 +10,10 @@ body{
   background-color: #E8F1F2;
 }
 #Semester{
-  padding: 0 3vmin;
+  padding: 0.4vw 3vmin;
 }
-#Semester span{
-  font-size: 2vmax;
+#Semester span{  
+  font-size: 1.8vmax;
 }
 #semestersyllabus{
   padding: 2.3vmin 3vmin;
@@ -28,7 +28,9 @@ body{
   height: 2.6vmin;
   width: 2.6vmin;
 }
-
+#semestersyllabus span{
+  font-size: 2vmin;
+}
 
 
 #semestersyllabusb{
@@ -53,7 +55,6 @@ body{
   flex-direction:row;
   align-items: center;
   gap: 10vmin;
-  background-color: magenta;
 }
 
 

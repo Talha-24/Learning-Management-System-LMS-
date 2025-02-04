@@ -9,10 +9,10 @@ import MyCourses from '../../My Courses/Courses/MyCourses';
 const Home = () => {
   return (
     <div id='Home' className='w-[100%] h-[100vh] flex felx-row justify-between '>
-      <div className='w-[20%]'>
+      <div id="navbarcontainer" className='w-[20%] h-[100%]'>
         <NavBar/>
         </div>
-        <div className="w-[78%]  h-[100%] flex flex-col bg-blue-500">
+        <div id="maindatacontainer" className="w-[78%]  h-[100%]">
        <MyCourses/>
         <Semesters/>
         {/* <Advertisement/>
