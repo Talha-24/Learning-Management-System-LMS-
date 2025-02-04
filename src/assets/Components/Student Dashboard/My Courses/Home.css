@@ -1,0 +1,65 @@
+#Home{
+    height: 100vh;
+    width: 100%;
+    padding: 4vmin;
+}
+#addvertisement{
+    /* height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4vmin; */
+    border: 1px solid black;
+    height: 40%;
+    width: 100%;
+}
+
+#addvertisement div{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4vmin;
+    background-image: url("src\assets\Components\Student Dashboard\D\HOME\Assets\Addvertisement.png");
+    background-size: cover;
+}
+
+#coursesinformation{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+   background-color: blueviolet;
+}
+#courses{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   height: 50%;
+   gap: 8%;
+
+}
+.course{
+    border: 1px solid blue;
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+  
+}
+.course img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#coursesmain{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    background-color: red;
+
+}
+.coursestatus{
+    height: 20%;
+    background-color: blue;
+    margin: 10px;
+    width: 50%;
+}

@@ -13,11 +13,12 @@ body{
   padding: 0.4vw 3vmin;
 }
 #Semester span{  
-  font-size: 1.8vmax;
+  font-size: 1.8vw;
 }
 #semestersyllabus{
   padding: 2.3vmin 3vmin;
   width: 100%;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -50,11 +51,12 @@ body{
 }
 
 #coursedetails{
+  margin-left: 3vmin;
   width: 100%;
   display: flex;
   flex-direction:row;
   align-items: center;
-  gap: 10vmin;
+  gap: 4vmax;
 }
 
 
@@ -64,8 +66,10 @@ body{
   width: 3vmax;
 }
 #coursedetailsb{
-  padding: 2vmax 1vmax;
+  padding: 2.3vmax 1vmax;
 }
-#coursedetailsb p{
-  font-size: 1.2vmax;
+#coursedetailsb div p{
+  color: white;
+
+  font-size: 1.4vw;
 }
