@@ -2,8 +2,8 @@ import React from 'react'
 
 const Notification = () => {
   return (
-    <div className="feature flex flex-row justify-between w-[95%]" >
-        <div id="featureproperties" className="flex flex-row gap-[2vw]">
+    <div className="feature flex flex-row justify-between w-[100%]" >
+        <div id="featureproperties" className="flex flex-row gap-[2vw] w-fit">
           <img id="symbol" src="src\assets\Components\Student Dashboard\Setting\Assets\Bellsvg.svg" alt="" />
 
 

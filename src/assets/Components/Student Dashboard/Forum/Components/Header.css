@@ -1,0 +1,131 @@
+
+
+
+#Header{
+    /* margin-top: 5vmin; */
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+ /* display: flex;
+ flex-direction: row;
+ justify-content: space-between; */
+}
+#Headerimg{
+    display: flex;
+    flex-direction: row;
+    gap: 4vmin;
+
+}
+#Headerimg img{
+     height: 5vmin;
+     width: 5vmin;
+}
+#dashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vmin;
+    font-family: sans-serif;
+}
+
+#dashboard #st{
+    color: #00173D;
+    font-weight: bold;
+}
+#dashboard #nd{
+    color: #00173D;
+    font-weight: 600;
+    font-size: 3vmin;
+}
+#st{
+    color: #00173D;
+    font-weight: 700;
+    font-size: 3.8vmin;
+
+}
+#MyCourses{
+    height: 15%;
+    width: 100%;
+}
+#searchBox{
+    display: flex;
+    align-items: center;
+    padding: 1.2vmin 2.4vmin;
+    border-radius: 2vmin;
+    margin-right: 1vmin;
+    box-shadow: 0px 0px 1.4vmin rgb(139, 139, 227);
+    background-color: #FFFFFF;
+
+}
+#searchBox p{
+    font-size: 3vmin;
+    color: #7C7C7C;
+    width: fit-content;
+    margin: 0vmin 2vmin;
+    font-family: sans-serif;
+}
+#searchBox svg{
+    height: 3.2vmin;
+    width: 3.2vmin;
+}
+#Lectures{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 1.4vmin rgb(139, 139, 227);
+}
+#Lectures h4{
+    font-size: 3.5vmin;
+    font-weight: 500;
+    padding: 0vmin 2vmin;
+    color: #303030;
+    background-color: white;
+    border-radius: 3vmin;
+}
+#Lecturers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vmin 2vmin;    
+}
+#image{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;    
+}
+#image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#name{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#name b{
+    font-size: 2.4vmin;
+    font-weight: 500;
+    color: #434343;
+}
+#time p{
+    color: #AFAFAF;
+}
+#message p{
+    font-size: 1.8vmin;
+    font-family: sans-serif;
+}
+#messagestatus{
+    color: white;
+
+}
+#ChatBox{
+    border-radius: 3vmin;
+    box-shadow: 0px 0px 10px rgb(139, 139, 2270);
+}
+#form{
+    height: 15%;
+}

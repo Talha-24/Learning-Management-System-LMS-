@@ -5,6 +5,7 @@ import Register from "./assets/Components/Authentication/Registeration/Register"
 import Notification from "./assets/Components/Features/Notification/Notification"
 import StudentInfo from "./assets/Components/Others/StudentInfo"
 import Home from "./assets/Components/Student Dashboard/D/HOME/Home"
+import Forum from "./assets/Components/Student Dashboard/Forum/Forum"
 import MyCoursescomponent from "./assets/Components/Student Dashboard/My Courses/MyCoursesComponent"
 import Semesters from "./assets/Components/Student Dashboard/My Courses/Semesters"
 import Setting from "./assets/Components/Student Dashboard/Setting/Setting"
@@ -23,7 +24,15 @@ function App() {
     {/* <Notification/> */}
   {/* <MyCoursescomponent/> */}
     {/* <Semesters/> */}
-    <Setting/>
+    {/* <Setting/> */}
+
+
+         {/* <Home/> */}
+         {/* <Forum/> */}
+         <Home/>
+
+
+
     </>
   )
 }

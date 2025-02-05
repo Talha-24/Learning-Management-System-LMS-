@@ -2,7 +2,7 @@ import React from 'react'
 
 const Friends = () => {
   return (
-    <div className="feature flex flex-row justify-between w-[95%]" >
+    <div className="feature flex flex-row justify-between w-[100%]" >
     <div id="featureproperties" className="flex flex-row gap-[2vw]">
       <img id="symbol" src="src\assets\Components\Student Dashboard\Setting\Assets\Bellsvg.svg" alt="" />
 
