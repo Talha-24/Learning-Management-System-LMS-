@@ -59,7 +59,7 @@
     background-color: #FFFFFF;
 
 }
-#searchBox p{
+#searchBox input{
     font-size: 3vmin;
     color: #7C7C7C;
     width: fit-content;
@@ -128,4 +128,103 @@
 }
 #form{
     height: 15%;
+}
+#userinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15%;
+    padding: 0vmin 2.8vmin;
+    border-bottom: 1px solid #B4ABABA8;
+}
+#userimageandlastseen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   gap: 1.4vmin;
+}
+#userimagecontainer{
+    height: 7vmin;
+    width: 7vmin;
+    background-color: burlywood;
+    border-radius: 50%;
+
+}
+#userimagecontainer img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+}
+#svgs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90%;
+    gap: 2vmin;
+}
+#nameandstatus{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+}
+#nameandstatus b{
+    color: rgb(48,48,48);
+    font-size: 3.5vmin;
+    font-family: sans-serif;
+    width: fit-content;
+    height: fit-content;
+}
+#nameandstatus span{
+    display: flex;
+    flex-direction: row;
+}
+#userchat{
+    height: 73%;
+}
+#useronetextoptions{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#messagecontainer{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(241,247,252);
+    border-radius: 3.2vmin;
+    padding: 1vmin 2vmin;
+}
+#messagecontainer #spanone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vmin;
+    width: 100%;
+}
+#messagecontainer #spanone input{
+    width: 100%;
+    outline: none;
+}
+#messagecontainer #spantwo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+#voicecontainer{
+    width: 10%;
+    padding: 2vmin 1.5vmin;
+    color: blue;
+background-color: #6e0fff;
+border-radius: 3vmin;
+}
+#voicecontainer img{
+    height: 100%;
+    width: 100%;
 }
