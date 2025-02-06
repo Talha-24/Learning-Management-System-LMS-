@@ -1,0 +1,25 @@
+
+#assignmentsyllabus{
+    padding: 2.3vmin 3vmin;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif;
+    border-top-left-radius: 1vmin;
+    border-top-right-radius: 1vmin;
+  }
+  #semestersyllabus #unitno{
+    font-size: 2vmin;
+  }
+
+#semestersyllabus #lecturerdetails{
+  background-color: purple;
+}
+#date{
+  padding-right: 10vmin;
+}
+#datetext{
+  padding-right: 4vmin;
+}

@@ -5,6 +5,7 @@ import Assignment from '../../Assignment/Components/Assignment';
 import Forum from '../../Forum/Forum';
 import MyCourses from '../../My Courses/Courses/MyCourses';
 import MyCoursescomponent from '../../My Courses/MyCoursesComponent';
+import TimeTable from '../../Time Table/TimeTable';
 
 const Home = () => {
   return (
@@ -23,13 +24,11 @@ const Home = () => {
        <AssignmentStatus/> */}
         {/* </div> */}
         {/* <Assignment/> */}
-        <Forum/>
+        {/* <Forum/> */}
         {/* <Assignment/> */}
         {/* <MyCoursescomponent/> */}
-
         {/* <Assignment/> */}
-        
-       
+        <TimeTable/>
 
     </div>
   )

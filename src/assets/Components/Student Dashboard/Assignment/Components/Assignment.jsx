@@ -3,6 +3,7 @@ import AssignmentHead from './AssignmentHead'
 import SemesterCount from '../../My Courses/Courses/SemesterCount'
 import AssignmentStatus from './AssignmentStatus'
 import AssignmentSemester from './AssignmentSemester'
+import TimeTable from '../../Time Table/TimeTable'
 const Assignment = () => {
   return (
     <>
@@ -14,7 +15,8 @@ const Assignment = () => {
     <AssignmentHead/>
    
     <AssignmentSemester/>
-    <AssignmentStatus/>
+    {/* <AssignmentStatus/> */}
+    <TimeTable/>
  
      </div>
      </>
