@@ -101,7 +101,13 @@
 
 }
 #NavButtonsContainer #button p{
-    font-weight: 400;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: black;
+    text-align: left;
+     width: 50%; 
+}
+#NavButtonsContainer #button img{
 }
 #NavButtonsContainer #button{
     height: 10%;
@@ -114,6 +120,10 @@
     justify-content: space-between;
     border-radius: 2vmin;
     padding: 3.5vmin 3vw;
+    cursor: pointer;
+}
+#NavButtonsContainer #button:active{
+    scale: 0.98;
 }
  img{
     height: 3.8vmin;
@@ -191,7 +201,11 @@ background-color: none;
         align-items: center;
         justify-content: center;
         gap:0px;
+        width: 70%;
         padding: 4vmin 0;
+    }
+    #NavButtonsContainer #button p{
+        width: fit-content;
     }
     
 }

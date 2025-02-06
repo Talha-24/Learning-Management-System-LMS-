@@ -2,9 +2,9 @@ import React from 'react'
 import "./Header.css"
 const StudentMessage = () => {
   return (
-    <span id='Students' className=''>
+    <span id='Students' className='bg-white'>
       <span id='Lectures' className='flex flex-col h-[100%]'>
-        <h4 className=''>Students</h4>
+        <h4 className='sticky'>Students</h4>
         <span id='Lecturers' className='border-b-1 border-gray-400'>
           <span id='name'>
             <span id="image">

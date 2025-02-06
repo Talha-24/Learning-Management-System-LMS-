@@ -82,3 +82,61 @@ body{
 
   font-size: 1.4vw;
 }
+#navoptions{
+  display: none;
+}
+@media (max-width:600px) {
+  #navbarcontainer{
+    display: none;
+  }
+  #maindatacontainer{
+    width: 100%;
+    height: 100%;
+  }
+  #navoptions{
+    display: inline-block;
+    position: absolute;
+    top: 9%;
+    left: 1%;
+  }
+  #form{
+    width: 100%;
+  }
+  
+}
+@media (max-width: 450px) {
+
+  
+#messagecontainer #spanone input{
+    width: 100%;
+
+    outline: none;
+    font-size: 2.3vmax;
+}
+#messagecontainer #spanone input::placeholder{
+  font-size: 2.3vmax;
+}
+
+}
+@media (max-width: 400px) {
+  #userinfo #nameandstatus{
+    display: flex;
+    flex-direction: column;
+  }
+  #userinfo #nameandstatus b{
+    font-size: 3vmin;
+    width: 100%;
+  }
+  #userinfo #nameandstatus span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  #userinfo #nameandstatus span p{
+    text-align: left;
+    font-size: 1.5vmin;
+  }
+
+  
+}

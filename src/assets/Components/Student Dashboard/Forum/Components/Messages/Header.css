@@ -71,7 +71,7 @@
     width: 3.2vmin;
 }
 #Lectures{
-    height: fit-content;
+    height: 30%;
     display: flex;
     flex-direction: column;
     background-color: white;

@@ -50,6 +50,7 @@
     width: 100%;
 }
 #searchBox{
+    height: 10%;
     display: flex;
     align-items: center;
     padding: 1.2vmin 2.4vmin;
@@ -60,15 +61,15 @@
 
 }
 #searchBox input{
-    font-size: 3vmin;
+    font-size: 1.8vmax;
     color: #7C7C7C;
     width: fit-content;
     margin: 0vmin 2vmin;
     font-family: sans-serif;
 }
 #searchBox svg{
-    height: 3.2vmin;
-    width: 3.2vmin;
+    height: 100%;
+    width:100%;
 }
 #Lectures{
     height: fit-content;
@@ -125,6 +126,9 @@
 #ChatBox{
     border-radius: 3vmin;
     box-shadow: 0px 0px 10px rgb(139, 139, 2270);
+    display: flex;
+    flex-direction: column;
+    padding: 1.8vmin 0;
 }
 #form{
     height: 15%;
@@ -182,12 +186,13 @@
 }
 #userchat{
     height: 73%;
+    margin: 2vmin 0;
 }
 #useronetextoptions{
     height: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around;    
 }
 #messagecontainer{
     width: 80%;
@@ -219,12 +224,45 @@
 
 #voicecontainer{
     width: 10%;
-    padding: 2vmin 1.5vmin;
+    padding: 2vmin 0px;
     color: blue;
 background-color: #6e0fff;
 border-radius: 3vmin;
 }
-#voicecontainer img{
+#voicecontainer svg{
     height: 100%;
     width: 100%;
+}
+#userchat{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap:5vmin;
+    padding: 1vmin 3vmin;
+    overflow-y: scroll;
+}
+#userchat::-webkit-scrollbar{
+    display: none;
+}
+#useronechat{
+    display: inline-block;
+    background-color: #E7E7E7;
+    height: fit-content;
+    width: fit-content;
+    align-self: right;
+    border-radius: 4vmin;
+    color: black;
+    font-size: 2.2vmin;
+    padding: 1vmin 2.5vmin;
+  }
+#usertwochat{
+    display: inline-block;
+    background-color: #6e0fff;
+    height: fit-content;
+    width: fit-content;
+    align-self: flex-end;
+    border-radius: 4vmin;
+    color: white;
+    font-size: 2.2vmin;
+    padding: 1vmin 2.5vmin;
 }
