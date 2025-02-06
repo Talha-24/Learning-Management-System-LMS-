@@ -13,11 +13,8 @@ const Assignment = () => {
      <Courseinfomain/> */}
     {/* <Assignment/> */}
     <AssignmentHead/>
-   
     <AssignmentSemester/>
-    {/* <AssignmentStatus/> */}
-    <TimeTable/>
- 
+    <AssignmentStatus/>
      </div>
      </>
   )

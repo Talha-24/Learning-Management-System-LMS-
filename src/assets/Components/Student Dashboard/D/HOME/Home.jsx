@@ -1,11 +1,14 @@
 import React from 'react'
 import NavBar from '../../NavBar/NavBar'
 import "./Home.css";
+import Setting from '../../Setting/Setting';
 import Assignment from '../../Assignment/Components/Assignment';
-import Forum from '../../Forum/Forum';
 import MyCourses from '../../My Courses/Courses/MyCourses';
 import MyCoursescomponent from '../../My Courses/MyCoursesComponent';
+import HomeMain from './HomeMain';
 import TimeTable from '../../Time Table/TimeTable';
+import Forum from '../../Forum/Forum';
+import { Route, Routes } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -28,7 +31,23 @@ const Home = () => {
         {/* <Assignment/> */}
         {/* <MyCoursescomponent/> */}
         {/* <Assignment/> */}
-        <TimeTable/>
+        {/* <Forum/> */}
+        {/* <Setting/> */}
+        {/* <TimeTable/> */}
+        
+        {/* <MyCoursescomponent/> */}
+        {/* <Setting/> */}
+      {/* <MyCoursescomponent/> */}
+      <Routes>
+      <Route path='/' element={<HomeMain/>} />
+      <Route path='/courses' element={<MyCoursescomponent/>} />
+      <Route path='/assignments' element={<Assignment/>} />
+      <Route path='/timetable' element={<TimeTable/>} />
+      <Route path='/forum' element={<Forum/>} />
+      <Route path='/setting' element={<Setting/>} />
+      {/* <HomeMain/> */}
+      </Routes>
+
 
     </div>
   )

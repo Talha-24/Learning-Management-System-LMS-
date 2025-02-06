@@ -9,6 +9,8 @@ import DisplayLanguages from './Components/DisplayLanguages'
 import Help from './Components/Help'
 const SettingMain = () => {
   return (
+    <>
+    <div className='flex flex-col gap-[4vmax] w-[40%]'>
     <div id='setting'>
       {/* <div className="feature flex flex-row justify-between w-[95%]" >
         <div id="featureproperties" className="flex flex-row gap-[2vw]">
@@ -27,6 +29,13 @@ const SettingMain = () => {
       <DisplayLanguages/>
       <Help/>
     </div>
+    <span id='logout' className='self-end'>
+          <img src="src\assets\Components\Student Dashboard\Time Table\Components\country flag.svg" alt="" />
+          <p className='cursor-pointer active:scale-[0.98]'>logout</p>
+    </span>
+    </div>
+
+    </>
   )
 }
 

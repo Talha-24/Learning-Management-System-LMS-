@@ -49,3 +49,6 @@ border: 2px solid #F8A435;
 .text{
     font-size: 3.2vmin;
 }
+#Notification{
+    display: none;
+}

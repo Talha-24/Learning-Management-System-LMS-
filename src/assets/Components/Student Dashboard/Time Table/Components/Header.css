@@ -1,0 +1,126 @@
+
+
+
+#Header{
+    /* margin-top: 5vmin; */
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+ /* display: flex;
+ flex-direction: row;
+ justify-content: space-between; */
+}
+#Headerimg{
+    display: flex;
+    flex-direction: row;
+    gap: 4vmin;
+
+}
+#Headerimg img{
+     height: 5vmin;
+     width: 5vmin;
+}
+#dashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vmin;
+    font-family: sans-serif;
+}
+
+#dashboard #st{
+    color: #00173D;
+    font-weight: bold;
+}
+#dashboard #nd{
+    color: #00173D;
+    font-weight: 600;
+    font-size: 3vmin;
+}
+#st{
+    color: #00173D;
+    font-weight: 700;
+    font-size: 3.8vmin;
+
+}
+#MyCourses{
+    height: 10%;
+    width: 100%;
+}
+#Semester button{
+    padding: 2.5vmin 6vmin;
+    font-size: 4vmin;
+    font-weight: 400;
+    border-radius: 1.5vmin;
+    font-family: serif;
+}
+
+@media (max-width: 1200px) {
+    
+#Semester button{
+    padding: 2vw 4vw;
+    font-size: 2.5vw;
+    font-weight: 400;
+    border-radius: 1.5vmin;
+    font-family: serif;
+}
+
+    
+}
+
+@media (max-width: 600px) {
+       
+#Semester button{
+    padding: 1.8vw 3vw;
+    font-size: 2.9vw;
+    font-weight: 400;
+    border-radius: 1.5vmin;
+    font-family: serif;
+}
+
+
+
+    
+}
+
+
+@media (max-width: 400px) {
+       
+    #Semester button{
+        padding: 1.8vw 3vw;
+        font-size: 3.2vw;
+        font-weight: 400;
+        border-radius: 1.5vmin;
+        font-family: serif;
+    }
+    
+    
+    
+        
+    }
+    
+    
+    #teachergmail{
+        color:#617488;
+    }
+    
+
+    @media (max-width: 1000px) {
+        #timing{
+            width: 10%;
+        }
+        /* #starttime,#endtime{
+            width: 10%;
+            background-color: blue;
+        } */
+        
+    }
+/* 
+@media (max-height:800px) {
+
+    #assignmentstatus{
+        height: 40%;
+    }
+} */

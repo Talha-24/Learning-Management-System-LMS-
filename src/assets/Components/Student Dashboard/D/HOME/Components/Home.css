@@ -1,0 +1,112 @@
+#Home{
+    height: 100vh;
+    width: 100%;
+    padding: 4vmin;
+}
+#addvertisement{
+    /* height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4vmin; */
+    height: 40%;
+    width: 100%;
+    overflow-y: scroll;
+    border-radius: 2vmin;
+}
+#addvertisement::-webkit-scrollbar{
+   display: none;
+}
+#addvertisement #img{
+    height: 100%;
+    width: 100%;
+    background-image: url('https://s3-alpha-sig.figma.com/img/bdd6/651c/a98edb1c3bed12e20780ab71548de847?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OsfUE5MkOkgQGfnWcskEjypkc9Ly1yhpz9Jj-Q~~QYdffl4Y450IcDc4eCPhZ08YZzGbGL6TP-O0I-zKo25g1Kk4Yj~uFQZVZdyPAUAtKiesxnqvjXOWyaODvHM1DbbEH-eaR6-mFcAIb~7Ob2cKLbRUaqFlKKOYXB3JEHhR7dvq4GHTQCzKN5~xmP1IYxzEHOMClf0Mk1kIJkHdND5xePyhZhLIaP7CeW-FWjbUf5oog7vljzwu5~bhZz0OInfkT3Lv3qP1EuMdIYpRlSz7sfW2CQ5I~BdfHtceEjH6fxpORrRNWD0eJGWhV~xTUi9YT7g~vsCnemgv902lELEsgQ__');
+    background-size:cover ;
+    background-position: 10px;
+
+}
+#coursesinformation{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+   background-color: blueviolet;
+}
+#courses{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   height: 50%;
+   gap: 8%;
+
+}
+.course{
+    border: 1px solid blue;
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+  
+}
+.course img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#coursesmain{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    background-color: red;
+
+}
+.coursestatus{
+    height: 20%;
+    background-color: blue;
+    margin: 10px;
+    width: 50%;
+}
+#progresscontainer{
+    height: 20%;
+    align-items: center;
+}
+
+#progresscontainer #attendanceprogress,#moduleprogress{
+    background-color: #00173D; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vmin 2vmin;
+    border-radius: 2.2vmin;
+    
+}
+#progresscontainer #attendanceprogress p{
+    color: white;
+    font-size:2.8vmin;
+    font-family: sans-serif;
+}
+
+#progresscontainer #moduleprogress p{
+    color: white;
+    font-size: 2.8vmin;
+    font-family: sans-serif;
+}
+#progress{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+@media (max-width: 600px) {
+    #progresscontainer #attendanceprogress p{
+        color: white;
+        font-size: 2.2vw;
+        font-family: sans-serif;
+    }
+    
+    #progresscontainer #moduleprogress p{
+        color: white;
+        font-size: 2w;
+        font-family: sans-serif;
+    }
+
+    
+}

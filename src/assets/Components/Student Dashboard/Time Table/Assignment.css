@@ -14,12 +14,16 @@
     font-size: 2vmin;
   }
 
-#semestersyllabus #lecturerdetails{
-  background-color: purple;
+#semestersyllabus #lecturerdetails #img{
+  height: 6.2vmin;
+  width: 6.2vmin;
 }
+/* 
 #date{
   padding-right: 10vmin;
+} */
+#countryimage{
+  height: 3.2vmin;
+  width: 3.2vmin;
 }
-#datetext{
-  padding-right: 4vmin;
-}
+
