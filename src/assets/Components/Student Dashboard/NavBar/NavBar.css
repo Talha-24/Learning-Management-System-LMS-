@@ -46,6 +46,8 @@
     gap: 3vw;
 }
 
+
+
 #userdetails #userimagecontainer{
     width: 4vw;
     height: 4vw;
@@ -100,13 +102,15 @@
     gap: 10px;
 
 }
-#NavButtonsContainer #button p{
+#NavButtonsContainer #button #Link{
     font-weight: 500;
     font-family: sans-serif;
     color: black;
     text-align: left;
      width: 50%; 
+     font-size: 1.3vmax;
 }
+
 #NavButtonsContainer #button{
     height: 10%;
     padding: 3vmin 0;
@@ -151,6 +155,7 @@
     /* justify-content: flex-start;
     gap: 0vmin; */
 }
+
 #userdetails{
     padding: 5px;
    
@@ -193,7 +198,7 @@ background-color: none;
     
 }
 @media (max-width: 1037px) {
-    #NavButtonsContainer #button Link{
+    #NavButtonsContainer #button{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -202,21 +207,22 @@ background-color: none;
         width: 70%;
         padding: 4vmin 0;
     }
-    #NavButtonsContainer #button p{
+    #NavButtonsContainer #button #Link{
         width: fit-content;
     }
     
 }
-@media (max-width: 623x) {
-    #NavButtonsContainer #button{
-        width: 80%;
+@media (max-width: 600px) {
+    #NavButtonsContainer #button #Link{
+        /* width: 80%;
     background-color: #C2E8F8;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1vw;
     background-color: red;
-   
+    */
+    font-size: 2vmin;
     }
     
 }

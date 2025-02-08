@@ -147,12 +147,29 @@ color:white;
     border-radius: 50%; */
 }
 #Students{
-    height: 50%;
+    height: 40%;
     overflow: scroll;
     box-shadow: 0px 0px 10px rgb(139, 139, 227);
     border-radius: 3vmin;
     position: relative;
 }
 #Students::-webkit-scrollbar{
+    display: none;
+}
+#aibot{
+    height: 10%;
+     box-shadow: 0px 0px 1.4vmin rgb(139, 139, 227);
+}
+
+#aibot #Lecturers #name #image{
+    height: 7vmin;
+    width: 7vmin;
+    border-radius: 50%;
+}
+#aibot #Lecturers #name #image img{
+    height: 100%;
+    width: 100%;
+}
+#aibot::-webkit-scrollbar{
     display: none;
 }

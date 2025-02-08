@@ -75,12 +75,15 @@ body{
   width: 3vmax;
 }
 #coursedetailsb{
-  padding: 2.3vmax 1vmax;
+  padding: 2.2vmax 1vmax;
 }
 #coursedetailsb div p{
   color: white;
 
-  font-size: 1.4vw;
+  font-size: 1.5vmax;
+}
+@media (max-width: 600px) {
+  
 }
 #navoptions{
   display: none;
@@ -97,7 +100,10 @@ body{
     display: inline-block;
     position: absolute;
     top: 9%;
-    left: 1%;
+    left: 1.2%;
+    color: black;
+    height: 3vw;
+
   }
   #form{
     width: 100%;
@@ -138,5 +144,26 @@ body{
     font-size: 1.5vmin;
   }
 
+  
+}
+
+
+@media (min-width: 600px) {
+  #navbarcontainer{
+    display: inline-block;
+  }
+  
+}
+@media (max-width: 620px) {
+  #Semester{
+    padding: 1.2vmin 2.2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #Semester span{
+    font-size: 2.5vmin;
+
+  }
   
 }
