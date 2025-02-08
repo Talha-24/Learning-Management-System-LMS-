@@ -9,9 +9,7 @@ const Forum = () => {
     <div id="maindatacontainer" className="w-[79%]  h-[100%] flex flex-col gap-[3.2%] ">
         <FormHead/>
         <div className='flex flex-row gap-[2%] w-[100%] h-[100%]'>
-
         <ForumMain setimgdata={setimgdata}/>
-
         <ForumChat imgdata={imgdata}  />
         </div>
      </div>

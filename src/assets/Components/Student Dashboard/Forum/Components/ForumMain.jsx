@@ -8,8 +8,6 @@ const ForumMain = ({setimgdata}) => {
 
     console.log(setimgdata);
 
-
-
     return (
 
         <div  id='formMain'className='flex flex-col w-[40%] gap-[2%] h-[98%] '>

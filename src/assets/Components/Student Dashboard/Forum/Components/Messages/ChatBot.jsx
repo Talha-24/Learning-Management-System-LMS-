@@ -13,6 +13,12 @@ const ChatBot = ({setimgdata}) => {
           <span id="image">
             <img onClick={(e)=>{
        setimgdata({image:e.target.src,name: "ChatGPT" });
+
+       document.querySelector("#ChatBox").style.display='inline-block';
+       document.querySelector("#ChatBox").style.width='100%';
+       document.querySelector("#ChatBox").style.height='100%';
+       document.querySelector("#userchat").style.height='70%';
+       document.querySelector("#formMain").style.display='none';
               }} src="https://static.vecteezy.com/system/resources/previews/007/225/199/non_2x/robot-chat-bot-concept-illustration-vector.jpg" alt="" />
           </span>
           <span id="message"><b onClick={(e)=>{setimgdata({ image: `https://static.vecteezy.com/system/resources/previews/007/225/199/non_2x/robot-chat-bot-concept-illustration-vector.jpg`, name:e.target.innerText, })}}>ChatGPT</b><p className="text-[1vmin]">Hi there ! how can I help you?</p>
