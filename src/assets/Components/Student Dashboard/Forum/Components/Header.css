@@ -50,18 +50,15 @@
     width: 100%;
 }
 #searchBox{
-    height: 10%;
+    height: 8%;
     display: flex;
     align-items: center;
-    padding: 1.2vmin 2.4vmin;
-    border-radius: 2vmin;
+    border-radius: 1px;
     margin-right: 1vmin;
     box-shadow: 0px 0px 1.4vmin rgb(139, 139, 227);
-    background-color: #FFFFFF;
-
 }
 #searchBox input{
-    font-size: 1.8vmax;
+    font-size: 1.2vmax;
     color: #7C7C7C;
     width: fit-content;
     margin: 0vmin 2vmin;

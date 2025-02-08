@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./Header.css"
 const SearchBox = () => {
   return (
     <span id='searchBox' className='w-[100%] flex '>

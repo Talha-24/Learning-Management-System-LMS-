@@ -4,43 +4,64 @@ import ChatBot from './Messages/ChatBot';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import UserTwoChat from './UserTwoChat';
 import UserOneChat from './UserOneChat';
-const FormChat = () => {
-  const [data, setdata] = useState(null);
-  const [enteredData,setenteredData]=useState([]);
-  const [aiData,setaiData]=useState([]);
+const FormChat = ({ imgdata }) => {
+  const [data, setdata] = useState('');
+  const [enteredData, setenteredData] = useState([]);
+
+
+
+
 
   async function airesponse(data) {
+
+    const user = { type: "Receiver", Message: data };
+
+    //   setenteredData((olddata)=>{
+    //     return [...olddata,user];
+
+    // })
     const genAI = new GoogleGenerativeAI("AIzaSyBUk46HorkY1F6Ve1fflMe31ErYzXSBuxY");
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const prompt = data;
-    const  result = await model.generateContent(prompt);
-    console.log("Ai Response : ", result.response.text());
-    setenteredData((data) => {
-      console.log(data)
-       return [...data, result.response.text()]
-  });
+    const result = await model.generateContent(prompt);
+    const airesponse = await result.response.text();
+    const ai = { type: "Sender", Message: airesponse }
+
+    setenteredData((olddata) => {
+      return [...olddata, user, ai];
+
+    })
+    console.log(ai, user);
+    console.log("My Request : ", enteredData)
   }
+
+  useEffect(() => {
+    console.log("Updated enteredData:", enteredData);
+  }, [enteredData]); // Runs when `enteredData` changes
+
   function showData(data) {
     airesponse(data);
-    setaiData(data);
     setdata('');
-    demo(data);
-    // setenteredData(data);
+
   }
-let name='Talha';
+
+
+
+
+
   return (
     <>
       <div id='ChatBox' className="w-[58%] h-[92%] bg-[#FFFFFF]">
         <span id="userinfo">
           <span id="userimageandlastseen">
             <span id="userimagecontainer">
-              <img src="https://s3-alpha-sig.figma.com/img/9303/6618/c1b66a9da2ebfd4a91266926849a8c7d?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Cc0-ZoWJwqN6QqKKK-dghk0TmpxP2tfLuE-bJx8XsjFUQycKNlPwiLMLoGEqfGJDzCB2E-s6P4NNhaJvQZdmLJyFjtLZHBFNgKLgvES5dFs6gf8E43QUfxSBoTdxiJ0-ROQZJk7fXwmPJWZX2fZaezB6imNQO32g4yRlbtW~N9RzY9-D3TnNMCOXmdsC4p2WX2Fyvu2R3hadi3TDmzxcHX2zRtwfzmNuEV6ISt7oOgClu1kSTZYxGwNAFqsfP4i7jqLmbuD5snOeOwxcSN36bY8oBkLsMZh58oqFkJcLn1lTa4NG7t488ItnCzNwR~bzmDohip8oA5Jq4Mrv0VoVHQ__" alt="" />
+              <img src={imgdata.image} alt="" />
             </span>
             <span id="nameandstatus">
-              <b>Anil</b>
+              <b>{imgdata.name}</b>
               <span>
-                <p>Online - </p>
-                <p>Last seen, 2.02pm</p>
+                <p>Online  </p>
+                <p></p>
               </span>
             </span>
           </span>
@@ -61,28 +82,47 @@ let name='Talha';
         </span>
 
         <div id="userchat">
+
+          {
+
+            enteredData.map(function (data) {
+
+              if (data.type == "Receiver") {
+                return <UserTwoChat data={data} />;
+              }
+
+
+            })
+
+
+
+
+          }
+
+          {
+            // setaiData ? (<span id='usertwochat'>{aiData}</span>):('')
+
+
+            //  enteredData.map(function(elem,idx,enteredData){
+            //   console.log(elem);
+            
+              enteredData.map(function (data) {
+
+                //  if(data.)
+                if (data.type == "Sender") {
+                  return <UserOneChat data={data} />;
+                }
            
-            {
-
-             
-                <UserTwoChat data={aiData}/>
-              
-               
             
-              
-             }
 
-             {
-              // setaiData ? (<span id='usertwochat'>{aiData}</span>):('')
-              
-              
-              < UserOneChat data={enteredData} />
-                
-             
-             }
-            
-          
-         
+            })
+            //  })
+
+
+          }
+
+
+
 
 
 
@@ -96,7 +136,7 @@ let name='Talha';
                 <path d="M20.8618 3.51296C17.7493 -0.0905832 12.6807 -0.0905832 9.57148 3.51296L0.947633 13.4896C0.891462 13.5547 0.861725 13.6427 0.861725 13.7345C0.861725 13.8263 0.891462 13.9143 0.947633 13.9793L2.16687 15.3909C2.2226 15.4551 2.29804 15.4912 2.37668 15.4912C2.45532 15.4912 2.53076 15.4551 2.58649 15.3909L11.2103 5.41419C12.2809 4.17476 13.705 3.49383 15.2183 3.49383C16.7316 3.49383 18.1557 4.17476 19.2229 5.41419C20.2935 6.65363 20.8816 8.30238 20.8816 10.0506C20.8816 11.8026 20.2935 13.4476 19.2229 14.687L10.4339 24.8588L9.00977 26.5075C7.67819 28.0492 5.51397 28.0492 4.1824 26.5075C3.53809 25.7616 3.18455 24.7708 3.18455 23.715C3.18455 22.6592 3.53809 21.6684 4.1824 20.9224L12.9021 10.831C13.1234 10.5785 13.4142 10.437 13.7248 10.437H13.7281C14.0387 10.437 14.3262 10.5785 14.5442 10.831C14.7656 11.0873 14.8846 11.4239 14.8846 11.7835C14.8846 12.1393 14.7623 12.4759 14.5442 12.7284L7.41717 20.9722C7.361 21.0372 7.33126 21.1252 7.33126 21.217C7.33126 21.3088 7.361 21.3968 7.41717 21.4618L8.6364 22.8734C8.69213 22.9376 8.76757 22.9737 8.84621 22.9737C8.92486 22.9737 9.0003 22.9376 9.05603 22.8734L16.1798 14.6258C16.8373 13.8645 17.1975 12.8546 17.1975 11.7797C17.1975 10.7047 16.834 9.69101 16.1798 8.93358C14.8218 7.36133 12.6146 7.36515 11.2566 8.93358L10.4107 9.91671L2.54024 19.025C2.00606 19.6399 1.58262 20.3713 1.29449 21.1771C1.00635 21.9828 0.859257 22.8468 0.861725 23.7188C0.861725 25.49 1.45978 27.154 2.54024 28.405C3.66034 29.6979 5.12739 30.3444 6.59443 30.3444C8.06148 30.3444 9.52852 29.6979 10.6453 28.405L20.8618 16.5844C22.3652 14.84 23.1978 12.518 23.1978 10.0506C23.2011 7.57938 22.3685 5.25735 20.8618 3.51296Z" fill="#333333" />
               </svg>
               <form onSubmit={(e) => { e.preventDefault(); showData(data); }}>
-                <input onChange={(e) => {setdata(e.target.value) }} value={data} id='chatinput' type="text" placeholder='Type your message..' className='placeholder:text-[2.7vmin] text-[2.7vmin] placeholder:text-black w-[100%]' />
+                <input onChange={(e) => { setdata(e.target.value) }} value={data} id='chatinput' type="text" placeholder='Type your message..' className='placeholder:text-[2.7vmin] text-[2.7vmin] placeholder:text-black w-[100%]' />
               </form>
             </span>
             <span id='spantwo'>

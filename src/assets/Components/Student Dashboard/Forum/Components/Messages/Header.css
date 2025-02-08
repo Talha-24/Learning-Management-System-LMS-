@@ -159,6 +159,7 @@ color:white;
 #aibot{
     height: 10%;
      box-shadow: 0px 0px 1.4vmin rgb(139, 139, 227);
+     display: block;
 }
 
 #aibot #Lecturers #name #image{
