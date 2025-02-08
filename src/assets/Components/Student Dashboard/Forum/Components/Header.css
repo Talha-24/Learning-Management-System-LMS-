@@ -267,6 +267,7 @@ border-radius: 3vmin;
     #ChatBox{
         display: none;
     }
+
     #formMain{
         width: 100%;
     }
@@ -294,5 +295,21 @@ border-radius: 3vmin;
 #Lecturers #name #message b{
     font-size: .9rem;
 }
-    
+  
+#ChatBox{
+    height: 94%;
+    }
+
+#userinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 12%;
+    padding: 0vmin 2.8vmin;
+    border-bottom: 1px solid #B4ABABA8;
+}
+
+
+
+
 }
