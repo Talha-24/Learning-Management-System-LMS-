@@ -89,6 +89,9 @@ const FormChat = ({ imgdata }) => {
 
               if (data.type == "Receiver") {
                 return <UserTwoChat data={data} />;
+              } else {
+                return <UserOneChat data={data} />;
+
               }
 
 
@@ -106,16 +109,16 @@ const FormChat = ({ imgdata }) => {
             //  enteredData.map(function(elem,idx,enteredData){
             //   console.log(elem);
             
-              enteredData.map(function (data) {
+            //   enteredData.map(function (data) {
 
-                //  if(data.)
-                if (data.type == "Sender") {
-                  return <UserOneChat data={data} />;
-                }
+            //     //  if(data.)
+            //     if (data.type == "Sender") {
+            //       return <UserOneChat data={data} />;
+            //     }
            
             
 
-            })
+            // })
             //  })
 
 

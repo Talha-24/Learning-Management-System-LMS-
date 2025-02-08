@@ -50,7 +50,7 @@
     width: 100%;
 }
 #searchBox{
-    height: 4%;
+    height: 10%;
     display: flex;
     align-items: center;
     border-radius: 1px;
@@ -58,7 +58,7 @@
     box-shadow: 0px 0px 1.4vmin rgb(139, 139, 227);
 }
 #searchBox input{
-    font-size: 1.2vmax;
+    font-size: 1.7vmax;
     color: #7C7C7C;
     width: fit-content;
     margin: 0vmin 2vmin;
@@ -262,4 +262,30 @@ border-radius: 3vmin;
     color: white;
     font-size: 2.2vmin;
     padding: 1vmin 2.5vmin;
+}
+@media (max-width: 600px) {
+    #ChatBox{
+        display: none;
+    }
+    #formMain{
+        width: 100%;
+    }
+    
+#searchBox input{
+    font-size: 1rem;
+    color: #7C7C7C;
+    width: fit-content;
+    margin: 0vmin 2vmin;
+    font-family: sans-serif;
+}
+#Lecturers #name #image{
+  height: 8vmin;
+  width: 8vmin;
+  align-items: center;
+}
+#Lecturers #name{
+    display: flex;
+    align-items: center;
+}
+    
 }
