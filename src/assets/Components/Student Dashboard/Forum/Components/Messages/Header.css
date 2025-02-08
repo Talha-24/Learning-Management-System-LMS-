@@ -174,3 +174,22 @@ color:white;
 #aibot::-webkit-scrollbar{
     display: none;
 }
+@media (max-width: 600px) {
+    #aibot{
+        height: 13%;
+    }
+    
+#aibot #Lecturers #name #image{
+    height: 9vmin;
+    width: 9vmin;
+    border-radius: 50%;
+}
+#aibot #Lecturers #name #image img{
+    height: 100%;
+    width: 100%;
+}
+#aibot #Lecturers #name #message b{
+    font-size: .8rem;
+
+}
+}
